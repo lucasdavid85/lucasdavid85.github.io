@@ -17,9 +17,19 @@
                 <div class="switch">
                     <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
                     <label for="language-toggle"></label>
-                    <span class="on">FR</span>
-                    <span class="off">EN</span>
+                    <span lang="fr">FR</span>
+                    <span lang="en">EN</span>
+
+                    <script>
+                    $('[lang="en"]').hide();
+
+                    $('#language-toggle').click(function() {
+                      $('[lang="fr"]').toggle();
+                      $('[lang="en"]').toggle();
+                    });   
+                    </script> 
                   </div>
+                  <p lang="fr">
                         <a href="index.html">Home</a>
 
                         <a href="presentation.html">Présentation</a>
@@ -29,7 +39,21 @@
                       <a href="activity.html">Activités / Hobbies</a>
           
                     <a href="contact.html">Contact</a>
-        </div>
+        </div></p>
+
+        <p lang="en">
+            <a href="index.html">Home</a>
+
+            <a href="presentation.html">Presentation</a>
+
+            <a href="parcours_pro.html" >Professionnal</a>
+
+          <a href="activity.html">Activities / Hobbies</a>
+
+        <a href="contact.html">Contact me</a>
+</div></p>
+
+
 
         <h1>Bienvenue sur mon site internet </h1>
 
