@@ -8,22 +8,6 @@
 
 <body>
   <div class="navbar">
-    <input id="language-toggle-input" class="check-toggle check-toggle-round-flat" type="checkbox">
-    <label for="language-toggle-input"></label>
-    <button id="language-toggle-button">Switch Language</button>
-  
-
-
-  <script>
-    const frLangElements = document.querySelectorAll('[lang="fr"]');
-    const enLangElements = document.querySelectorAll('[lang="en"]');
-    enLangElements.forEach(element => element.style.display = "none");
-
-    document.getElementById("language-toggle-button").addEventListener("click", function() {
-      frLangElements.forEach(element => element.style.display = (element.style.display === "none") ? "inline" : "none");
-      enLangElements.forEach(element => element.style.display = (element.style.display === "none") ? "inline" : "none");
-    });
-  </script>
 
   <a href="index.html">Home</a>
   <a href="presentation.html">Présentation</a>
@@ -31,10 +15,25 @@
   <a href="activity.html">Activités / Hobbies</a>
   <a href="contact.html">Contact</a>
 </div>
-<span lang="fr">FR</span>
-<span lang="en">EN</span>
-<span lang="fr">Bienvenue sur mon site internet</span>
-<span lang="en">Welcome on my personal website</span>
+
+<div>
+  <h1>Bienvenue sur mon site internet </h1>
+  <p>
+    Sur ce site tu peux découvrir qui je suis ainsi que mon parcours professionnel, mes activités et hobbies. Tu peux également me contacter en allant sur la page contact. 
+  </p>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
 
 </body>
 

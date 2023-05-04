@@ -1,3 +1,9 @@
+.html{
+  background-color: aqua;
+}
+.body{
+  background-color:chocolate
+}
 /* Navbar container */
 .navbar {
   overflow: hidden;
