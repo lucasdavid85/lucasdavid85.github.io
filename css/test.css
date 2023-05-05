@@ -1,9 +1,4 @@
-.html{
-  background-color: #f1f1f2;
-}
-*{
-  background-color:#f1f1f2;
-}
+
 /* Navbar container */
 .navbar {
   overflow: hidden;
@@ -181,4 +176,12 @@
   
   input.check-toggle-round-flat:checked + label:after {
     margin-left: 44px;
+  }
+
+
+table,th,td{
+  text-align: center;
+border:1px solid;
+border-collapse: collapse;
+width:75vw
   }
