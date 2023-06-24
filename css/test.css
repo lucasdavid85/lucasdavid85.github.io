@@ -185,3 +185,89 @@ border:1px solid;
 border-collapse: collapse;
 width:75vw
   }
+
+
+  /* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up the table container */
+.table-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the table */
+.table {
+  width: 100%;
+  background-color: #fff;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the table header */
+.table thead th {
+  background-color: #4267b2;
+  color: #fff;
+  padding: 15px;
+  text-align: left;
+}
+
+/* Style the table rows */
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Style table cells */
+.table td,
+.table th {
+  padding: 12px 15px;
+}
+
+/* Hover effect on table rows */
+.table tbody tr:hover {
+  background-color: #e9e9e9;
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  .table {
+      font-size: 14px;
+  }
+
+  .table thead {
+      display: none;
+  }
+
+  .table tbody td {
+      display: block;
+      text-align: right;
+      border: none;
+      padding: 8px 15px;
+  }
+
+  .table tbody td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      display: block;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+  }
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
