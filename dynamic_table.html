@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table id="dynamic-table">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </table>
+
+    <script>
+        // Sample data
+        var data = [
+            { name: "John Doe", age: 25 },
+            { name: "Jane Smith", age: 30 },
+            { name: "Bob Johnson", age: 35 }
+        ];
+
+        var table = document.getElementById("dynamic-table");
+
+        // Loop through the data and generate table rows
+        for (var i = 0; i < data.length; i++) {
+            var row = table.insertRow(i + 1);
+            var nameCell = row.insertCell(0);
+            var ageCell = row.insertCell(1);
+
+            nameCell.innerHTML = data[i].name;
+            ageCell.innerHTML = data[i].age;
+        }
+    </script>
+</body>
+</html>
